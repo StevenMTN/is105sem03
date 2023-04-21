@@ -1,7 +1,7 @@
 package mycrypt
 
-//legger til de manglende Store bokstaver "KSN"
-var ALF_SEM03 []rune = []rune("abcdefghijklmnopqrstuvwxyzæøå0123456789.,:; KSN") 
+//legger til de manglende Store bokstaver 
+var ALF_SEM03 []rune = []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅabcdefghijklmnopqrstuvwxyzæøå0123456789.,:; ") 
 
 func Krypter(melding []rune, alphabet []rune, chiffer int) []rune {
 	kryptertMelding := make([]rune, len(melding))
